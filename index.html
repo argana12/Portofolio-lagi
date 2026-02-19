@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- icon -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>COMING SOON</h1>
+  <div class="scroll-down" onclick="scrollToContent()">
+    <span></span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="content">
+  <h2>About Me</h2>
+  <p>
+    Saya adalah <b>Cyber Security Engineer</b> yang memiliki pengalaman dalam 
+    Full Stack Development, Cloud Computing, Desktop Application, dan Mobile Development.
+  </p>
+
+  <img src="img/profile.jpg" class="profile">
+</section>
+
+<!-- ACHIEVEMENT -->
+<section class="achievement">
+  <h2>Achievements</h2>
+
+  <img src="img/sertif-cyber-juara3.jpg" class="sertif portrait" onclick="openModal(this)">
+  <img src="img/sertif-cloud-juara3.jpg" class="sertif landscape" onclick="openModal(this)">
+  <img src="img/sertif-peserta-cyber.jpg" class="sertif landscape" onclick="openModal(this)">
+</section>
+
+<!-- SOCIAL -->
+<section class="social">
+  <a href="#"><i class="fab fa-x-twitter"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-threads"></i></a>
+</section>
+
+<!-- MODAL -->
+<div id="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img id="modal-img">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
